@@ -1,4 +1,4 @@
-package Lesson_07.Ex005;
+package javaoop160723.Lecture.Lecture_001.Ex005;
 
 public class Program {
     public static void main(String[] args) {
