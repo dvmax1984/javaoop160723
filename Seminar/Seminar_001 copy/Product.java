@@ -1,6 +1,5 @@
 package javaoop160723.Seminar.Seminar_001;
 
-import java.math.BigDecimal;
 import java.util.Calendar;
 /* Реализуйте класс Товар, содержащий данные о товаре, и 
 ТорговыйАвтомат, содержащий в себе методы initProducts (List <Product>)
@@ -8,7 +7,7 @@ import java.util.Calendar;
  */
 public class Product {
     
-    public String name;
+    private String name;
     private int price;
     private int quantinity;
     private Calendar bestBefore;
@@ -18,9 +17,6 @@ public class Product {
         this.price = price;
         this.quantinity = quantinity;
         this.bestBefore = bestBefore;
-    }
-
-    public Product(String name2, BigDecimal bigDecimal, double d, int i) {
     }
 
     public Calendar getBestBefore() {
