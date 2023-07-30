@@ -5,22 +5,35 @@ import java.util.List;
 
 public class HotBeverageAutomat extends Automat{
      
-    List<HotBeverage> hotDrinksList = new ArrayList<>();
+    List <HotBeverage> hotDrinksList = new ArrayList<>();
+    List <HotBeverage> resultFind = new ArrayList<>();
     
-    public void initProduct2(List<HotBeverage> hotDrinksList2) {
-        this.hotDrinksList = hotDrinksList2;
+    public void HotBeverageAutomat(List<HotBeverage> list) {
+        this.hotDrinksList = list;
     }
 
-    public HotBeverage getProduct2(String name) {
-        for (HotBeverage el: hotDrinksList) {
-
-            System.out.println("-//* " + hotDrinksList.toString());
+    public Product getProduct(String name) {
+        
+        resultFind.clear();
+        for (HotBeverage el : hotDrinksList) {
+            System.out.println(hotDrinksList.toString());
+            if (el.getName().equals(name))  
+            // resultFind.add(el);
+            return el;
             
-            if (el.getName().equals(name)) {
-                return el;
-            }
         }
         return null;
     }
 
+    public Product getProduct(String name, int volume, int temperature) {
+        for (HotBeverage el : hotDrinksList) {
+            System.out.println(hotDrinksList.toString() && el.volume == volume);
+            if (el.getName().equals(name))  
+            // resultFind.add(el);
+            return el;
+            
+        }
+        return null;
+
+    }
 }

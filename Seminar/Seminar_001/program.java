@@ -29,15 +29,17 @@ public class Program {
         HotBeverage HotBeverage2 = new HotBeverage("Tea", new BigDecimal(1), 0.4, 80, 10,5);
         HotBeverage HotBeverage3 = new HotBeverage("Milk", new BigDecimal(3), 1.0, 50,10,5);
 
-        HotBeverageAutomat HotDrinks = new HotBeverageAutomat();
+        HotBeverageAutomat hotDrinks = new HotBeverageAutomat();
         List<HotBeverage> hotDrinksList = new ArrayList<>(); 
 
         hotDrinksList.add(HotBeverage1);
         hotDrinksList.add(HotBeverage2);
         hotDrinksList.add(HotBeverage3);
-        HotDrinks.initProduct2(hotDrinksList);
+        hotDrinks.initProduct2(hotDrinksList);
 
-        System.out.println("Поиск по названию: " + HotDrinks.getProduct2("Coffee"));
+        String name2 = "Coffee";
+        //System.out.println("Поиск по названию: " + hotDrinks.getProduct2(name2));
+        System.out.println(hotDrinks.getProduct2(name2).toString());
         //System.out.println(HotDrinks.getProduct2("Coffee"));
 
         //System.out.println("Поиск по цене <=: " + HotDrinks.getProduct(new BigDecimal(2.5)));

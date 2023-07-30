@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.util.GregorianCalendar;
 
 public class Beverage extends Product{
-    private double volume;
+    public double volume;
     
     public Beverage(String name, BigDecimal bigDecimal, double d, int i, double volume) {
         super(name, bigDecimal, d, i);
@@ -23,6 +23,6 @@ public class Beverage extends Product{
     
     @Override
     public String toString() {
-        return "Beverage [объем=" + volume + "]";
+        return "Beverage (Напиток--) [объем=" + volume + "]";
     }
 }

@@ -4,7 +4,7 @@ import java.util.GregorianCalendar;
 
 public class Food extends Product{ 
 
-    private double weight;
+    public double weight;
 
     public Food(String name, int price, int quantinity, GregorianCalendar gregorianCalendar, double weight) {
         super(name, price, quantinity, gregorianCalendar);
